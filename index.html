@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles.css">
+  <body>
+    <nav>
+      <p>icon</p>
+        <div class="">
+          <p>dashboard</p>
+          <p>trans.hist.</p>
+          <p>profile</p>
+        </div>
+      <p>hamburger</p>
+    </nav>
+    <main>
+      <section class="left-section">
+        <h1>Your Budget</h1>
+        <div class="">
+          October
+        </div>
+        <div class="current-numbers">
+          <section>
+            <h3>Income</h3>
+          </section>
+          <section>
+            <h3>Expenses</h3>
+          </section>
+          <section>
+            <h3>Credit Score</h3>
+          </section>
+        </div>
+        <div class="accounts-header">
+          <h2>Account</h2>
+          <button>Add Account</button>
+        </div>
+
+        <section class="account-cards">
+          <section class="account-card">
+            <p>icon</p>
+            <div class="account-title">
+              <h3>Bank name</h3>
+              <h4>Account NickName</h4>
+            </div>
+            <p>Active Status</p>
+            <button>Details</button>
+          </section>
+          <section class="account-card">
+            <p>icon</p>
+            <div class="account-title">
+              <h3>Bank name</h3>
+              <h4>Account NickName</h4>
+            </div>
+            <p>Active Status</p>
+            <button>Details</button>
+          </section>
+        </section>
+      </section>
+
+      <section class="right-section">
+        <h2>Transactions</h2>
+        <form>
+          <label for="">
+            <input type="button" value="Expense">
+            <input type="button" value="Income">
+            <input type="button" value="Transfer">
+          </label>
+          <label for="payee">Payee:<input id="payee" type="text"></label>
+          <label for="amount">Amount:<input id="amount" type="number"></label>
+          <label for="category">Category:<input id="category" type="dropdown"></label>
+          <label for="from">Account from:<input id="from" type="dropdown"></label>
+          <input type="submit" name="" value="Log Expense">
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
