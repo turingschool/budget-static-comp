@@ -25,16 +25,43 @@ section {
 .left-section,
 .right-section {
   width: 50%;
+  padding: 1%;
+}
+
+.greeting-banner {
+  font-size: 200%;
+  padding: 3%;
+  border-radius: 6px;
+  background-color: blanchedalmond;
 }
 
 .current-numbers {
   display: flex;
+  justify-content: space-between;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+.current-num-card {
+  border-radius: 6px;
+  width: 30%;
+  padding: 3%;
+  font-size: 120%;
+  background-color: blanchedalmond;
 }
 
 .accounts-header {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
 }
 
 .account-card {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  margin-bottom: 1%;
+  border-radius: 3px;
+  background-color: papayawhip;
 }
