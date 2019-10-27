@@ -116,17 +116,20 @@ h1 {
 
 .add-acct {
   border-radius: 50px;
-  padding: 1.25% 12px 1% 12px;
+  padding: 2.25% 12px 2% 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   border: none;
+  cursor: pointer;
 }
 
 .account-card {
   display: grid;
-  grid-template-columns: 10% 45% 20% 10%;
+  /* grid-template-columns: 10% 45% 20% 10%; */
+  grid-template-columns: 10% 30% 25% 20%;
   grid-column-gap: 5%;
   align-items: center;
-  padding: 2.5% 3%;
+  /* padding: 2.5% 3%; */
+  padding: 2.5% 5%;
   margin-bottom: 2%;
   border-radius: 3px;
   background-color: #fff;
@@ -165,10 +168,6 @@ form {
   margin-top: 3%;
 }
 
-.category-btn {
-
-}
-
 .form-inputs {
   display: flex;
   flex-direction: column;
@@ -193,7 +192,7 @@ input[type="submit"] {
   padding: 1.25% 3% 1%;
   width: 30%;
   color: #fff;
-  border-color: #20BED9;
+  border-color: #25D9F8;
   cursor: pointer;
   margin-top: 2%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
