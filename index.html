@@ -44,7 +44,7 @@
 
         <section class="account-cards">
           <section class="account-card">
-            <img class="account-icon" src="./assets/checking.svg" alt="Dashboard Icon">
+            <img class="account-icon" src="./assets/income.svg" alt="Income Icon">
             <div class="account-title">
               <h3>Paycheck</h3>
             </div>
@@ -52,7 +52,7 @@
             <h4>$1,342.12</h4>
           </section>
           <section class="account-card">
-            <img class="account-icon" src="./assets/savings.svg" alt="Dashboard Icon">
+            <img class="account-icon" src="./assets/expenses.svg" alt="Expenses Icon">
             <div class="account-title">
               <h3>Target</h3>
             </div>
@@ -82,6 +82,14 @@
                 <option value="income">Income</option>
               </select>
             </label>
+            <label for="from">Account from:
+              <select class="typed-input" class="transaction-type">
+                <option value=""> - - Select one - - </option>
+                <option value="expense">Checking</option>
+                <option value="income">Rapid Rewards</option>
+                <option value="income">Amazon Credit</option>
+              </select>
+            </label>
             <div class="form-inputs">
               <label for="payee">Payee:
                 <input class="typed-input" id="payee" type="text">
@@ -91,9 +99,6 @@
               </label>
               <label for="category">Category:
                 <input class="typed-input" id="category" type="dropdown">
-              </label>
-              <label for="from">Account from:
-                <input class="typed-input" id="from" type="dropdown">
               </label>
               <input type="submit" value="Log Expense">
             </div>
