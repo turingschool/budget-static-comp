@@ -167,11 +167,6 @@ form {
   margin-top: 3%;
 }
 
-.form-inputs {
-  display: flex;
-  flex-direction: column;
-}
-
 .typed-input {
   display: block;
   margin-bottom: 3%;
