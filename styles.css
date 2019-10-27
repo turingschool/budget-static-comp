@@ -14,8 +14,30 @@ nav {
   justify-content: space-between;
 }
 
+.rocket-icon {
+  height: 75px;
+  padding: 15%;
+}
+
+.nav-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-icon {
+  height: 45px;
+  margin-bottom: 15%;
+  padding: 7.5%;
+}
+
+.nav-icon:first-of-type {
+  border-left: 3px solid #FF7816;
+}
+
 main {
   display: flex;
+  width: 100%;
 }
 
 section {
@@ -25,8 +47,10 @@ section {
 .left-section,
 .right-section {
   width: 50%;
-  padding: 1%;
+  padding: 1.5% 2.5%;
 }
+
+/* ---- LEFT SIDE ---- */
 
 .greeting-banner {
   font-size: 200%;
@@ -56,6 +80,11 @@ section {
   margin-bottom: 1%;
 }
 
+.add-acct {
+  border-radius: 50px;
+  padding: 1% 2%;
+}
+
 .account-card {
   display: flex;
   justify-content: space-between;
@@ -64,4 +93,20 @@ section {
   margin-bottom: 1%;
   border-radius: 3px;
   background-color: papayawhip;
+}
+
+/* ---- RIGHT SIDE ---- */
+.category-btn {
+
+}
+
+.form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.typed-input {
+  display: block;
+  margin-bottom: 2%;
+  font-size: 120%;
 }
