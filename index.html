@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Biryani:300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
   <body>
     <nav>
@@ -11,23 +12,26 @@
         <img class="nav-icon" src="./assets/transactions.svg" alt="Transactions Icon">
         <img class="nav-icon" src="./assets/profile.svg" alt="Profile Icon">
       </div>
-      <p></p>
+      <img id="hide" class="rocket-icon" src="./assets/rocket.svg" alt="Rocket Icon">
     </nav>
     <main>
       <section class="left-section">
         <h1>Your Budget</h1>
         <div class="greeting-banner">
-          October
+          <h2>Welcome, Oscar!</h2>
         </div>
         <div class="current-numbers">
           <section class="current-num-card">
             <h3>Income</h3>
+            <p>$2,560</p>
           </section>
           <section class="current-num-card">
             <h3>Expenses</h3>
+            <p>$1,824</p>
           </section>
           <section class="current-num-card">
             <h3>Credit Score</h3>
+            <p>673</p>
           </section>
         </div>
         <div class="accounts-header">
@@ -37,59 +41,63 @@
 
         <section class="account-cards">
           <section class="account-card">
-            <p>icon</p>
+            <img class="account-icon" src="./assets/checking.svg" alt="Dashboard Icon">
             <div class="account-title">
               <h3>Wells Fargo</h3>
-              <h4>Amy's Checking</h4>
+              <h4>Oscar's Checking</h4>
             </div>
             <p>Active Status</p>
-            <button>Details</button>
+            <button class="acct-insights-btn"></button>
           </section>
           <section class="account-card">
-            <p>icon</p>
+            <img class="account-icon" src="./assets/savings.svg" alt="Dashboard Icon">
             <div class="account-title">
-              <h3>Rapid Rewards</h3>
-              <h4>Amy's SW Card</h4>
+              <h3>Wells Fargo</h3>
+              <h4>Savings Account</h4>
             </div>
             <p>Active Status</p>
-            <button>Details</button>
+            <button class="acct-insights-btn"></button>
           </section>
           <section class="account-card">
-            <p>icon</p>
+            <img class="account-icon" src="./assets/credit-card.svg" alt="Dashboard Icon">
             <div class="account-title">
               <h3>Amazon Credit</h3>
-              <h4>Amy's Amazon Card</h4>
+              <h4>Oscar's Amazon Card</h4>
             </div>
             <p>Active Status</p>
-            <button>Details</button>
+            <button class="acct-insights-btn"></button>
           </section>
         </section>
       </section>
 
       <section class="right-section">
-        <h2>Transactions</h2>
-        <form>
-          <label class="category-btn" for="">
-            <input type="button" value="Expense">
-            <input type="button" value="Income">
-            <input type="button" value="Transfer">
-          </label>
-          <div class="form-inputs">
-            <label for="payee">Payee:
-              <input class="typed-input" id="payee" type="text">
+        <div class="form-section">
+          <h2 class="new-trans-title">New Transactions</h2>
+          <form>
+            <label class="category-btn" for="">Type of Transaction:
+              <select class="typed-input" class="transaction-type">
+                <option value=""> - - Select one - - </option>
+                <option value="expense">Expense</option>
+                <option value="income">Income</option>
+              </select>
             </label>
-            <label for="amount">Amount:
-              <input class="typed-input" id="amount" type="number">
-            </label>
-            <label for="category">Category:
-              <input class="typed-input" id="category" type="dropdown">
-            </label>
-            <label for="from">Account from:
-              <input class="typed-input" id="from" type="dropdown">
-            </label>
-            <input type="submit" value="Log Expense">
-          </div>
-        </form>
+            <div class="form-inputs">
+              <label for="payee">Payee:
+                <input class="typed-input" id="payee" type="text">
+              </label>
+              <label for="amount">Amount:
+                <input class="typed-input" id="amount" type="number">
+              </label>
+              <label for="category">Category:
+                <input class="typed-input" id="category" type="dropdown">
+              </label>
+              <label for="from">Account from:
+                <input class="typed-input" id="from" type="dropdown">
+              </label>
+              <input type="submit" value="Log Expense">
+            </div>
+          </form>
+        </div>
       </section>
 
     </main>
