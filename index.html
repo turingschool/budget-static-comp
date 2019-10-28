@@ -35,31 +35,30 @@
           </section>
         </div>
         <div class="accounts-header">
-          <h2>Transaction History</h2>
-          <div class="">
-            <button class="add-acct">Expenses</button>
-            <button class="add-acct">Income</button>
-          </div>
+          <h2>Accounts</h2>
+          <button class="add-acct">Add Account</button>
         </div>
 
         <section class="account-cards">
           <section class="account-card">
             <img class="account-icon" src="./assets/checking.svg" alt="Dashboard Icon">
             <div class="account-title">
-              <h3>Paycheck</h3>
+              <h3>Wells Fargo</h3>
+              <h4>Oscar's Checking</h4>
             </div>
-            <p>Paycheck</p>
-            <h4>$1,342.12</h4>
+            <p>Active Status</p>
+            <button class="acct-insights-btn"></button>
           </section>
           <section class="account-card">
             <img class="account-icon" src="./assets/savings.svg" alt="Dashboard Icon">
             <div class="account-title">
-              <h3>Target</h3>
+              <h3>Wells Fargo</h3>
+              <h4>Oscar's Savings</h4>
             </div>
-            <p>Shopping</p>
-            <h4>$132.44</h4>
+            <p>Active Status</p>
+            <button class="acct-insights-btn"></button>
           </section>
-          <!-- <section class="account-card">
+          <section class="account-card">
             <img class="account-icon" src="./assets/credit-card.svg" alt="Dashboard Icon">
             <div class="account-title">
               <h3>Amazon Credit</h3>
@@ -67,36 +66,41 @@
             </div>
             <p>Active Status</p>
             <button class="acct-insights-btn"></button>
-          </section> -->
+          </section>
         </section>
       </section>
 
       <section class="right-section">
         <div class="form-section">
-          <h2 class="new-trans-title">New Transactions</h2>
+          <h2 class="new-trans-title">New Transaction</h2>
           <form>
             <label class="category-btn" for="">Type of Transaction:
               <select class="typed-input" class="transaction-type">
-                <option value=""> - - Select one - - </option>
                 <option value="expense">Expense</option>
                 <option value="income">Income</option>
               </select>
             </label>
-            <div class="form-inputs">
-              <label for="payee">Payee:
-                <input class="typed-input" id="payee" type="text">
-              </label>
-              <label for="amount">Amount:
-                <input class="typed-input" id="amount" type="number">
-              </label>
-              <label for="category">Category:
-                <input class="typed-input" id="category" type="dropdown">
-              </label>
-              <label for="from">Account from:
-                <input class="typed-input" id="from" type="dropdown">
-              </label>
-              <input type="submit" value="Log Expense">
-            </div>
+            <label class="category-btn" for="">Category:
+              <select class="typed-input" class="category-type">
+                <option value="none"> - Select One -</option>
+                <option value="monthy">Bills</option>
+                <option value="monthy">Groceries</option>
+                <option value="fun">Fun Money</option>
+              </select>
+            </label>
+            <label for="payee">Payee:
+              <input class="typed-input" id="payee" type="text">
+            </label>
+            <label for="amount">Outflow:
+              <input class="typed-input" id="flow" type="number">
+            </label>
+            <label for="category">Category:
+              <input class="typed-input" id="category" type="dropdown">
+            </label>
+            <label for="from">Account from:
+              <input class="typed-input" id="account" type="dropdown">
+            </label>
+            <input type="submit" value="Log Expense">
           </form>
         </div>
       </section>
