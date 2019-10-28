@@ -12,18 +12,19 @@ function addTransaction(event) {
   var amount = inputs[3].value;
   var category = inputs[4].value;
 
-  addCard(type, payee, amount, category);
+  var newTransaction = new Transaction(type, payee, amount, category);
+  addCard(newTransaction);
 }
 
-function addCard(type, payee, amount, category) {
+function addCard(transaction) {
   cards.innerHTML += `
     <section class="account-card">
-      <img class="account-icon" src="./assets/${type}.svg" alt="Expenses Icon">
+      <img class="account-icon" src="./assets/${transaction.type}.svg" alt="Expenses Icon">
       <div class="account-title">
-        <h3>${payee}</h3>
+        <h3>${transaction.payee}</h3>
       </div>
-      <p>${category}</p>
-      <h4>$${amount}</h4>
+      <p>${transaction.category}</p>
+      <h4>$${transaction.amount}</h4>
     </section>
   `;
 }
