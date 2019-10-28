@@ -35,30 +35,31 @@
           </section>
         </div>
         <div class="accounts-header">
-          <h2>Accounts</h2>
-          <button class="add-acct">Add Account</button>
+          <h2>Transaction History</h2>
+          <div class="">
+            <button class="add-acct">Expenses</button>
+            <button class="add-acct">Income</button>
+          </div>
         </div>
 
         <section class="account-cards">
           <section class="account-card">
-            <img class="account-icon" src="./assets/checking.svg" alt="Dashboard Icon">
+            <img class="account-icon" src="./assets/income.svg" alt="Income Icon">
             <div class="account-title">
-              <h3>Wells Fargo</h3>
-              <h4>Oscar's Checking</h4>
+              <h3>Paycheck</h3>
             </div>
-            <p>Active Status</p>
-            <button class="acct-insights-btn"></button>
+            <p>Paycheck</p>
+            <h4>$1,342.12</h4>
           </section>
           <section class="account-card">
-            <img class="account-icon" src="./assets/savings.svg" alt="Dashboard Icon">
+            <img class="account-icon" src="./assets/expenses.svg" alt="Expenses Icon">
             <div class="account-title">
-              <h3>Wells Fargo</h3>
-              <h4>Savings Account</h4>
+              <h3>Target</h3>
             </div>
-            <p>Active Status</p>
-            <button class="acct-insights-btn"></button>
+            <p>Shopping</p>
+            <h4>$132.44</h4>
           </section>
-          <section class="account-card">
+          <!-- <section class="account-card">
             <img class="account-icon" src="./assets/credit-card.svg" alt="Dashboard Icon">
             <div class="account-title">
               <h3>Amazon Credit</h3>
@@ -66,7 +67,7 @@
             </div>
             <p>Active Status</p>
             <button class="acct-insights-btn"></button>
-          </section>
+          </section> -->
         </section>
       </section>
 
@@ -77,29 +78,33 @@
             <label class="category-btn" for="">Type of Transaction:
               <select class="typed-input" class="transaction-type">
                 <option value=""> - - Select one - - </option>
-                <option value="expense">Expense</option>
+                <option value="expenses">Expense</option>
                 <option value="income">Income</option>
               </select>
             </label>
-            <div class="form-inputs">
-              <label for="payee">Payee:
-                <input class="typed-input" id="payee" type="text">
-              </label>
-              <label for="amount">Amount:
-                <input class="typed-input" id="amount" type="number">
-              </label>
-              <label for="category">Category:
-                <input class="typed-input" id="category" type="dropdown">
-              </label>
-              <label for="from">Account from:
-                <input class="typed-input" id="from" type="dropdown">
-              </label>
-              <input type="submit" value="Log Expense">
-            </div>
+            <label for="from">Account from:
+              <select class="typed-input" class="transaction-type">
+                <option value=""> - - Select one - - </option>
+                <option value="checking">Checking</option>
+                <option value="rapid-rewards">Rapid Rewards</option>
+                <option value="amazon-credit">Amazon Credit</option>
+              </select>
+            </label>
+            <label for="payee">Payee:
+              <input class="typed-input" id="payee" type="text">
+            </label>
+            <label for="amount">Amount:
+              <input class="typed-input" id="amount" type="number">
+            </label>
+            <label for="category">Category:
+              <input class="typed-input" id="category" type="dropdown">
+            </label>
+            <input type="submit" value="Log Transaction">
           </form>
         </div>
       </section>
-
     </main>
+    <script type="text/javascript" src="./transaction.js"></script>
+    <script type="text/javascript" src="./script.js"></script>
   </body>
 </html>
