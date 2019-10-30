@@ -5,7 +5,7 @@ This branch was created for a classes/object and Local Storage lesson.
 ## Set Up
 
 - Clone down this repository
-- Pull down this branch by running `git pull ls-lesson`
+- Pull down this branch by running `git pull origin ls-lesson`
 
 ## Tasks
 
