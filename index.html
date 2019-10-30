@@ -16,18 +16,18 @@
     </nav>
     <main>
       <section class="left-section">
-        <h1>Your Budget</h1>
+        <h1>Dashboard</h1>
         <div class="greeting-banner">
           <h2>Welcome, Oscar!</h2>
         </div>
         <div class="current-numbers">
           <section class="current-num-card">
             <h3>Income</h3>
-            <p>$2,560</p>
+            <p>$2,119.12</p>
           </section>
           <section class="current-num-card">
             <h3>Expenses</h3>
-            <p>$1,824</p>
+            <p>$420.54</p>
           </section>
           <section class="current-num-card">
             <h3>Credit Score</h3>
@@ -36,9 +36,8 @@
         </div>
         <div class="accounts-header">
           <h2>Accounts</h2>
-          <button class="add-acct">Add Account</button>
+          <button class="manage-accounts-btn">Manage Accounts</button>
         </div>
-
         <section class="account-cards">
           <section class="account-card">
             <img class="account-icon" src="./assets/checking.svg" alt="Dashboard Icon">
@@ -46,7 +45,7 @@
               <h3>Wells Fargo</h3>
               <h4>Oscar's Checking</h4>
             </div>
-            <p>Active Status</p>
+            <p class="status active">Active</p>
             <button class="acct-insights-btn"></button>
           </section>
           <section class="account-card">
@@ -55,7 +54,7 @@
               <h3>Wells Fargo</h3>
               <h4>Oscar's Savings</h4>
             </div>
-            <p>Active Status</p>
+            <p class="status active">Active</p>
             <button class="acct-insights-btn"></button>
           </section>
           <section class="account-card">
@@ -64,47 +63,112 @@
               <h3>Amazon Credit</h3>
               <h4>Oscar's Amazon Card</h4>
             </div>
-            <p>Active Status</p>
+            <p class="status inactive">Inactive</p>
             <button class="acct-insights-btn"></button>
           </section>
         </section>
       </section>
 
       <section class="right-section">
-        <div class="form-section">
-          <h2 class="new-trans-title">New Transaction</h2>
-          <form>
-            <label class="category-btn" for="">Type of Transaction:
-              <select class="typed-input" class="transaction-type">
-                <option value="expense">Expense</option>
-                <option value="income">Income</option>
-              </select>
-            </label>
-            <label class="category-btn" for="">Category:
-              <select class="typed-input" class="category-type">
-                <option value="none"> - Select One -</option>
-                <option value="monthy">Bills</option>
-                <option value="monthy">Groceries</option>
-                <option value="fun">Fun Money</option>
-              </select>
-            </label>
-            <label for="payee">Payee:
-              <input class="typed-input" id="payee" type="text">
-            </label>
-            <label for="amount">Outflow:
-              <input class="typed-input" id="flow" type="number">
-            </label>
-            <label for="category">Category:
-              <input class="typed-input" id="category" type="dropdown">
-            </label>
-            <label for="from">Account from:
-              <input class="typed-input" id="account" type="dropdown">
-            </label>
-            <input type="submit" value="Log Expense">
-          </form>
+        <div class="recent-transactions">
+          <div class="transactions-header">
+            <h2 class="recent-title">Recent Transactions</h2>
+            <button class="new-transaction-btn">New Transaction</button>
+          </div>
+          <section class="transaction transaction-header">
+            <h4>Date</h4>
+            <h4>Payee</h4>
+            <h4>Inflow</h4>
+            <h4>Outflow</h4>
+          </section>
+          <section class="transaction">
+            <time>Oct 25, 2019</time>
+            <h4>Target</h4>
+            <p> - </p>
+            <p>$82.35</p>
+          </section>
+          <section class="transaction">
+            <time>Oct 24, 2019</time>
+            <h4>Express</h4>
+            <p> - </p>
+            <p>$212.24</p>
+          </section>
+          <section class="transaction">
+            <time>Oct 22, 2019</time>
+            <h4>Paycheck</h4>
+            <p>$1,319.12</p>
+            <p> - </p>
+          </section>
+          <section class="transaction">
+            <time>Oct 21, 2019</time>
+            <h4>Trader Joe's</h4>
+            <p> - </p>
+            <p>$54.92</p>
+          </section>
+          <section class="transaction">
+            <time>Oct 20, 2019</time>
+            <h4>Shell</h4>
+            <p> - </p>
+            <p>$46.23</p>
+          </section>
+          <section class="transaction">
+            <time>Oct 19, 2019</time>
+            <h4>Rent</h4>
+            <p>$800.00</p>
+            <p> - </p>
+          </section>
+          <section class="transaction">
+            <time>Oct 19, 2019</time>
+            <h4>Hapa Sushi</h4>
+            <p> - </p>
+            <p>$13.97</p>
+          </section>
+          <section class="transaction">
+            <time>Oct 18, 2019</time>
+            <h4>Pig Train</h4>
+            <p> - </p>
+            <p>$4.83</p>
+          </section>
+          <section class="transaction">
+            <time>Oct 18, 2019</time>
+            <h4>RTD</h4>
+            <p> - </p>
+            <p>$6.00</p>
+          </section>
         </div>
       </section>
 
     </main>
   </body>
 </html>
+
+<!-- <h2 class="new-trans-title">New Transaction</h2>
+<form>
+  <label class="category-btn" for="">Type of Transaction:
+    <select class="typed-input" class="transaction-type">
+      <option value="expense">Expense</option>
+      <option value="income">Income</option>
+    </select>
+  </label>
+  <label class="category-btn" for="">Category:
+    <select class="typed-input" class="category-type">
+      <option value="none"> - Select One -</option>
+      <option value="monthy">Bills</option>
+      <option value="monthy">Groceries</option>
+      <option value="fun">Fun Money</option>
+    </select>
+  </label>
+  <label for="payee">Payee:
+    <input class="typed-input" id="payee" type="text">
+  </label>
+  <label for="amount">Outflow:
+    <input class="typed-input" id="flow" type="number">
+  </label>
+  <label for="category">Category:
+    <input class="typed-input" id="category" type="dropdown">
+  </label>
+  <label for="from">Account from:
+    <input class="typed-input" id="account" type="dropdown">
+  </label>
+  <input type="submit" value="Log Expense">
+</form> -->

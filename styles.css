@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Biryani', sans-serif;
+  color: #363636;
 }
 
 body {
@@ -110,18 +111,17 @@ h1 {
 .accounts-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 2%;
   margin-top: 6%;
 }
 
-.add-acct {
+.manage-accounts-btn {
+  background-color: white;
+  color: red;
   border-radius: 50px;
-  padding: 1.25% 12px 1% 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.25% 2% 1%;
   cursor: pointer;
-  color: #25D9F8;
-  border: 1px solid #25D9F8;
-  text-shadow: 0.25px 0.25px 0.5px #136D7C;
 }
 
 .account-card {
@@ -140,6 +140,19 @@ h1 {
   height: 30px;
 }
 
+.status {
+  text-transform: uppercase;
+  font-size: 90%;
+}
+
+.active {
+  color: #09C40F;
+}
+
+.inactive {
+  color: #F02B21;
+}
+
 .acct-insights-btn {
   border-radius: 100px;
   border: none;
@@ -154,7 +167,46 @@ h1 {
 
 /* ---- RIGHT SIDE ---- */
 
-.form-section {
+.recent-transactions {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 5%;
+  margin: 14% auto 14% 2.5%;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 95%;
+}
+
+.transactions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+
+.new-transaction-btn {
+  background-color: white;
+  color: red;
+  border-radius: 50px;
+  padding: 1.25% 2% 1%;
+  cursor: pointer;
+}
+
+.transaction {
+  display: grid;
+  grid-template-columns: 20% 30% 20% 20%;
+  grid-column-gap: 5%;
+  border-bottom: 1px solid grey;
+  padding-top: 1.75%;
+  padding-bottom: 1.25%;
+}
+
+.transaction-header {
+
+}
+
+/* .form-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -201,4 +253,4 @@ input[type="submit"] {
   cursor: pointer;
   margin-top: 2%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
+} */
